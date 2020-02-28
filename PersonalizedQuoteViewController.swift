@@ -44,5 +44,6 @@ class PersonalizedQuoteViewController: UIViewController {
         }
         task.resume()
     }
-}
+}	
+
 
