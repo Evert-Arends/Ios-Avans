@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4fL-tI-Pfv">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrumpiDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7U-J2-p1l">
+                                <rect key="frame" x="393.5" y="126" width="109" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="List with quotes"/>
+                                <connections>
+                                    <segue destination="buZ-N1-th1" kind="show" id="ue7-YO-kNf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEm-DL-Ft1">
+                                <rect key="frame" x="363" y="212" width="170" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Get your personal quote!"/>
+                                <connections>
+                                    <segue destination="me4-We-wRI" kind="show" id="KDO-ij-JXx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l7U-J2-p1l" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1jr-2d-193"/>
+                            <constraint firstItem="EEm-DL-Ft1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="P0T-bZ-b7D"/>
+                            <constraint firstItem="l7U-J2-p1l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="TXR-qv-VF6"/>
+                            <constraint firstItem="EEm-DL-Ft1" firstAttribute="top" secondItem="l7U-J2-p1l" secondAttribute="bottom" constant="56" id="zhd-hs-BSw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zeb-z9-6R0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602.8985507246377" y="203.57142857142856"/>
+        </scene>
+        <!--Personalized quote!-->
+        <scene sceneID="FRc-u8-WSs">
+            <objects>
+                <viewController id="me4-We-wRI" customClass="PersonalizedQuoteViewController" customModule="TrumpiDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xvs-gL-oh5">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name goes here...." borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="180-rZ-UZJ">
+                                <rect key="frame" x="373" y="205" width="150" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote goes here.." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqZ-AT-26Y">
+                                <rect key="frame" x="64" y="303" width="768" height="20.5"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nl0-cm-zjg">
+                                <rect key="frame" x="90" y="242" width="716" height="30"/>
+                                <state key="normal" title="Go!"/>
+                                <connections>
+                                    <action selector="Touchy:" destination="me4-We-wRI" eventType="touchDown" id="DjS-pC-IBG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xqZ-AT-26Y" firstAttribute="centerX" secondItem="Wlu-uj-vcC" secondAttribute="centerX" id="C8Z-PV-pcl"/>
+                            <constraint firstItem="Nl0-cm-zjg" firstAttribute="top" secondItem="180-rZ-UZJ" secondAttribute="bottom" constant="8" id="M2C-Th-Jdc"/>
+                            <constraint firstItem="Wlu-uj-vcC" firstAttribute="trailing" secondItem="Nl0-cm-zjg" secondAttribute="trailing" constant="46" id="VUi-6r-TsX"/>
+                            <constraint firstItem="xqZ-AT-26Y" firstAttribute="top" secondItem="180-rZ-UZJ" secondAttribute="bottom" constant="69" id="a67-LK-7Zz"/>
+                            <constraint firstItem="180-rZ-UZJ" firstAttribute="centerX" secondItem="Wlu-uj-vcC" secondAttribute="centerX" id="ai3-N0-3fX"/>
+                            <constraint firstItem="Wlu-uj-vcC" firstAttribute="trailing" secondItem="xqZ-AT-26Y" secondAttribute="trailing" constant="20" id="gta-s5-XK1"/>
+                            <constraint firstItem="Nl0-cm-zjg" firstAttribute="centerX" secondItem="Wlu-uj-vcC" secondAttribute="centerX" id="ode-eq-ec9"/>
+                            <constraint firstItem="180-rZ-UZJ" firstAttribute="top" secondItem="Wlu-uj-vcC" secondAttribute="top" constant="161" id="t5X-dw-bgk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wlu-uj-vcC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Personalized quote!" id="i6U-uP-iIJ"/>
+                    <connections>
+                        <outlet property="NameTextField" destination="180-rZ-UZJ" id="JgI-Ag-9aY"/>
+                        <outlet property="QuoteLabel" destination="xqZ-AT-26Y" id="LFS-Fn-Nej"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v4t-AD-nqG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2405.7971014492755" y="203.57142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="el0-sO-AdG">
+            <objects>
+                <navigationController id="4fL-tI-Pfv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VYu-54-Nbp">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rBT-su-6wc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhI-5G-FA3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1603" y="-614"/>
+        </scene>
+        <!--Quotes list-->
+        <scene sceneID="L3e-qd-AnZ">
+            <objects>
+                <tableViewController id="buZ-N1-th1" customClass="TableViewController" customModule="TrumpiDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="w8w-Ys-qf3">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrumpQuotes" id="iFe-eN-t1U">
+                                <rect key="frame" x="0.0" y="28" width="896" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iFe-eN-t1U" id="TcO-pp-uiT">
+                                    <rect key="frame" x="44" y="0.0" width="808" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="K4L-pI-a9L" kind="show" id="ecP-Cg-wfp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="buZ-N1-th1" id="3qo-9I-jtq"/>
+                            <outlet property="delegate" destination="buZ-N1-th1" id="Jkk-ht-co3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Quotes list" id="CBx-Rw-pv0"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xw4-j3-c7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="781" y="204"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="hHQ-19-cTd">
+            <objects>
+                <viewController id="K4L-pI-a9L" customClass="DetailViewController" customModule="TrumpiDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J9L-zQ-e0V">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZ2-VO-00R">
+                                <rect key="frame" x="424.5" y="208.5" width="47" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FZ2-VO-00R" firstAttribute="centerY" secondItem="uP2-5K-CgZ" secondAttribute="centerY" id="f6s-1U-XZX"/>
+                            <constraint firstItem="FZ2-VO-00R" firstAttribute="centerX" secondItem="uP2-5K-CgZ" secondAttribute="centerX" id="kyx-H5-vzU"/>
+                            <constraint firstItem="FZ2-VO-00R" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uP2-5K-CgZ" secondAttribute="leading" constant="20" id="oEA-eI-mWO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uP2-5K-CgZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="58v-kn-DA0"/>
+                    <connections>
+                        <outlet property="QuoteLabel" destination="FZ2-VO-00R" id="8QS-eY-VRi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i43-MA-LAK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="203.57142857142856"/>
+        </scene>
+    </scenes>
+</document>

@@ -13,6 +13,12 @@
 		E8F0641A2406F641001B35AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F064182406F641001B35AE /* Main.storyboard */; };
 		E8F0641C2406F645001B35AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F0641B2406F645001B35AE /* Assets.xcassets */; };
 		E8F0641F2406F645001B35AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F0641D2406F645001B35AE /* LaunchScreen.storyboard */; };
+		E8F064272406F8B5001B35AE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E8F064262406F8B5001B35AE /* logo.png */; };
+		E8F06431240706CD001B35AE /* PersonalizedQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F06430240706CD001B35AE /* PersonalizedQuoteViewController.swift */; };
+		E8F0643324071710001B35AE /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F0643224071710001B35AE /* QuoteModel.swift */; };
+		E8F0643524073429001B35AE /* QuotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F0643424073429001B35AE /* QuotesModel.swift */; };
+		E8F064382407396C001B35AE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F064372407396C001B35AE /* TableViewController.swift */; };
+		E8F0643A24074037001B35AE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F0643924074037001B35AE /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		E8F0641B2406F645001B35AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8F0641E2406F645001B35AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8F064202406F645001B35AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8F064262406F8B5001B35AE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		E8F06430240706CD001B35AE /* PersonalizedQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonalizedQuoteViewController.swift; path = ../../PersonalizedQuoteViewController.swift; sourceTree = "<group>"; };
+		E8F0643224071710001B35AE /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		E8F0643424073429001B35AE /* QuotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesModel.swift; sourceTree = "<group>"; };
+		E8F064372407396C001B35AE /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E8F0643924074037001B35AE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,69 @@
 		E8F064112406F641001B35AE /* TrumpiDo */ = {
 			isa = PBXGroup;
 			children = (
-				E8F064122406F641001B35AE /* AppDelegate.swift */,
-				E8F064142406F641001B35AE /* SceneDelegate.swift */,
-				E8F064162406F641001B35AE /* ViewController.swift */,
-				E8F064182406F641001B35AE /* Main.storyboard */,
+				E8F064362407389A001B35AE /* Delegates */,
+				E8F0642C24070223001B35AE /* Assets */,
+				E8F0642B24070204001B35AE /* Storyboards */,
+				E8F0642A240701F9001B35AE /* Models */,
+				E8F06428240701AC001B35AE /* Controllers */,
 				E8F0641B2406F645001B35AE /* Assets.xcassets */,
-				E8F0641D2406F645001B35AE /* LaunchScreen.storyboard */,
 				E8F064202406F645001B35AE /* Info.plist */,
 			);
 			path = TrumpiDo;
+			sourceTree = "<group>";
+		};
+		E8F06428240701AC001B35AE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E8F06430240706CD001B35AE /* PersonalizedQuoteViewController.swift */,
+				E8F064162406F641001B35AE /* ViewController.swift */,
+				E8F064372407396C001B35AE /* TableViewController.swift */,
+				E8F0643924074037001B35AE /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E8F0642A240701F9001B35AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8F0643224071710001B35AE /* QuoteModel.swift */,
+				E8F0643424073429001B35AE /* QuotesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E8F0642B24070204001B35AE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E8F0641D2406F645001B35AE /* LaunchScreen.storyboard */,
+				E8F064182406F641001B35AE /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E8F0642C24070223001B35AE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E8F0642D24070231001B35AE /* Images */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E8F0642D24070231001B35AE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E8F064262406F8B5001B35AE /* logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E8F064362407389A001B35AE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E8F064122406F641001B35AE /* AppDelegate.swift */,
+				E8F064142406F641001B35AE /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F064272406F8B5001B35AE /* logo.png in Resources */,
 				E8F0641F2406F645001B35AE /* LaunchScreen.storyboard in Resources */,
 				E8F0641C2406F645001B35AE /* Assets.xcassets in Resources */,
 				E8F0641A2406F641001B35AE /* Main.storyboard in Resources */,
@@ -138,9 +205,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F0643324071710001B35AE /* QuoteModel.swift in Sources */,
+				E8F064382407396C001B35AE /* TableViewController.swift in Sources */,
 				E8F064172406F641001B35AE /* ViewController.swift in Sources */,
+				E8F0643524073429001B35AE /* QuotesModel.swift in Sources */,
+				E8F06431240706CD001B35AE /* PersonalizedQuoteViewController.swift in Sources */,
 				E8F064132406F641001B35AE /* AppDelegate.swift in Sources */,
 				E8F064152406F641001B35AE /* SceneDelegate.swift in Sources */,
+				E8F0643A24074037001B35AE /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
